@@ -1,0 +1,19 @@
+@mixin variantes ($tamanio, $peso, $color, $fondo ) {
+    font-size: $tamanio;
+    font-weight: $peso;
+    color: $color;
+    background: $fondo;
+}
+ 
+.primerAgente{
+    @include variantes (25px, 200, rgb(234, 250, 16), grey)
+}
+.segundoAgente{
+    @include variantes (30px, 100, rgb(96, 97, 89), rgb(245, 238, 238))
+}
+.tercerAgente{
+    @include variantes (35px, 250, rgb(91, 231, 166), rgb(167, 161, 161))
+}
+.cuartoAgente{
+    @include variantes (35px, 150, rgb(183, 206, 8), rgb(83, 73, 73))
+}

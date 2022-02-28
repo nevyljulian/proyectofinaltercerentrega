@@ -1,0 +1,32 @@
+.boton {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    font-style: italic;
+    font-weight: bold;
+
+    &:hover {
+        filter: opacity(80%);
+    }
+    &:active{
+        color: rgba(0, 195, 255, 0.863);
+    }
+}
+
+.segundoBoton{
+    @extend .boton;
+    height: 50px;
+    background: rgb(157, 157, 233);
+    &:active{
+        color: rgba(34, 89, 104, 0.863);
+}
+}
+.tercerBoton{
+    @extend .boton;
+    height: 50px;
+    width: 80px;
+    background: rgb(10, 10, 224) ;
+    &:active{
+        color: rgba(185, 29, 2, 0.863);
+}
+}

@@ -1,0 +1,6 @@
+#Cosas que no van
+
+package-lock.json/
+package.json/
+
+node_modules/

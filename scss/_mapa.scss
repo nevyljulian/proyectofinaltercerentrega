@@ -1,0 +1,42 @@
+$titulos : (
+    tituloIndex : rgba(204, 148, 7, 0.959),
+    tituloAgentes: rgba(104, 96, 78, 0.959),
+    tituloEmpresa: rgba(14, 13, 12, 0.959),
+    tituloPropiedades: rgba(255, 183, 0, 0.959),
+    tituloContacto: rgba(238, 147, 147, 0.945),
+);
+
+.tituloIndex{
+    color: map-get($map: $titulos , $key:tituloIndex );
+}
+.tituloAgentes{
+    color: map-get($titulos , tituloAgentes );
+}
+.tituloEmpresa{
+    color: map-get($titulos , tituloEmpresa );
+}
+.tituloPropiedades{
+    color: map-get($titulos , tituloPropiedades );
+}
+.tituloContacto{
+    color: map-get($titulos , tituloContacto );
+}
+
+$redes:(
+    facebook: rgb(77, 77, 209),
+    instagram: rgb(212, 34, 117),
+    mail: rgb(58, 57, 57),
+    whatsapp:rgb(72, 202, 20),
+);
+.colorFacebook{
+    color: map-get($map: $redes, $key:facebook );
+}
+.colorInstagram{
+    color: map-get($map: $redes, $key:instagram );
+}
+.colorMail{
+    color: map-get($map: $redes, $key:mail );
+}
+.colorWhatsapp{
+    color: map-get($map: $redes, $key:whatsapp );
+}
